@@ -6,6 +6,7 @@ import org.junit.Test;
 
 public class LoginTest {
     private static final String EMPLOYEES_PAGE_CHECKPOINT = "http://cafetownsend-angular-rails.herokuapp.com/login";
+
     @Test
     public void testLogin() throws InterruptedException {
         LoginPage page = LoginPage.open();
@@ -21,7 +22,7 @@ public class LoginTest {
         page.EnterPassword("Skywalker");
         page.GetLoginButton().click();
         page.getLoginHeader().GetLogoutButton().click();
-        Assert.assertFalse("Was not able to logout to application", page.isUserLoggedIn());
+        Assert.assertFalse("Was not able to logout from application", page.isUserLoggedIn());
     }
 
     @Test
@@ -30,7 +31,7 @@ public class LoginTest {
         page.EnterUsername("Luke");
         page.EnterPassword("123");
         page.GetLoginButton().click();
-        Assert.assertTrue("Invalid username or password!", page.getLoginHeader().checkLoggedGreetingsIsNotDisplayed());
+        Assert.assertTrue("Invalid username or password was accepted", page.getLoginHeader().checkLoggedGreetingsIsNotDisplayed());
     }
 
     @Test
@@ -46,7 +47,8 @@ public class LoginTest {
     public void testUnloggedUserCantSeeEmployeesList(){
         LoginPage page = LoginPage.open();
         page.openEmployeeListByUrl();
-        assert EMPLOYEES_PAGE_CHECKPOINT.equals(Navigation.getDriver().getCurrentUrl()) : "Unlogged user is navigated to Employees list";
+
+        Assert.assertTrue("Unlogged user is navigated to Employees list", EMPLOYEES_PAGE_CHECKPOINT.equals(Navigation.getDriver().getCurrentUrl()));
 
     }
     @After

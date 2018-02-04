@@ -1,0 +1,8 @@
+Pages\EmployeesListPage.class
+Pages\Navigation.class
+Pages\EmployeeDetailsPage.class
+components\EmployeeListItem.class
+components\EmployeesList.class
+components\LogedInHeader.class
+Pages\LoginPage.class
+components\Button.class

@@ -1,0 +1,10 @@
+To run the tests:
+1. Checkout TestFramework source
+2. Go to TestFramework folder where pom.xml present
+3. Run comand in cmd: mvn clean install test
+
+OR
+
+1. Open project in IntelliJ IDEA
+2. Compile project 
+3. Run CafeTownsendTestSuite.class

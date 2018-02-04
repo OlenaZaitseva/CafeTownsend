@@ -1,19 +1,25 @@
 package components;
 
 import Pages.Navigation;
-import Pages.Wait;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class Employee {
+public class EmployeeListItem {
+
     private WebElement nestedElement;
-    public Employee (WebElement element){
+
+    public EmployeeListItem(WebElement element){
         nestedElement = element;
     }
     public void click(){
-        //Wait.createNew().until(ExpectedConditions.elementToBeClickable(nestedElement));
         nestedElement.click();
         Navigation.waitAngularLoaded();
     }
+
+    public boolean isSelected(){
+        boolean isSelected = nestedElement.getAttribute("class").contains("active");
+        return isSelected;
+    }
+
+
 
 }
