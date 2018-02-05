@@ -209,7 +209,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="103" />
     <option name="y" value="160" />
     <option name="width" value="1378" />
@@ -573,7 +573,7 @@
       <workItem from="1517488443042" duration="1195000" />
       <workItem from="1517490785103" duration="12809000" />
       <workItem from="1517523062643" duration="21446000" />
-      <workItem from="1517767493104" duration="553000" />
+      <workItem from="1517767493104" duration="1148000" />
     </task>
     <servers />
   </component>
@@ -610,10 +610,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48014000" />
+    <option name="totallyTimeSpent" value="48609000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1060" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
